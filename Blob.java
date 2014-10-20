@@ -33,6 +33,7 @@ public class Blob extends Entities implements Comparable<Entities> {
 	double mutation = 50;
 
 	public Blob() {
+		
 		this.x = (int)(Math.random()* 3000 - 1500);
 		this.y = (int)(Math.random()* 3000 - 1500);
 		this.direction = (Math.random()*360);
@@ -50,7 +51,7 @@ public class Blob extends Entities implements Comparable<Entities> {
 
 	}
 
-	public Blob(double b[]) {
+	private Blob(double b[]) {
 		super();
 		this.x = (int)(Math.random()* 3000 - 1500);
 		this.y = (int)(Math.random()* 3000 - 1500);
